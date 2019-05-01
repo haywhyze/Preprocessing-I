@@ -134,3 +134,54 @@ html,
 body {
   height: 100%;
 }
+img {
+  width: 100%;
+}
+:root {
+  font-size: 100%;
+}
+@media (max-width: 550px) {
+  :root {
+    font-size: 120%;
+  }
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.container header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #274C77;
+  color: #EDF2F4;
+}
+.container header .navbar ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  padding: 2rem 0;
+}
+.container header .navbar ul li {
+  padding: 0 1rem;
+  border-right: 1px solid #EDF2F4;
+}
+.container header .navbar ul li:nth-last-of-type(1) {
+  border-right: unset;
+}
+.container header .navbar ul li:hover {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+@media (max-width: 750px) {
+  .container header .navbar ul li {
+    padding: 0 0.5rem;
+  }
+}
+@media (max-width: 750px) {
+  .container header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
