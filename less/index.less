@@ -11,6 +11,16 @@ h1 {
 	margin: 2rem 0 1rem 0;
 }
 
+h2 {
+	font-size: @xLargeFontSize;
+	margin: 1rem 0;
+}
+
+h3 {
+	font-size: @largeFontSize;
+	margin: 1rem 0;
+}
+
 :root {
 	font-size: @defaultFontSize;
 
@@ -118,6 +128,46 @@ h1 {
 		@media (max-width: @mobileBreakpoint) {
 			padding: 2rem .7rem
 		}
+	}
+
+	.main-content {
+		padding: 1rem;
+		.flex-container(space-between, flex-start);
+		flex-wrap: wrap;
+		background: @tertiaryColor;
+
+		.intro,
+		.skills {
+			flex-basis: 47%;
+
+			@media (max-width: @mobileBreakpoint) {
+				flex-basis: 80%;
+				width: 80%;
+			}
+		}
+
+		.intro p {
+			line-height: 1.25;
+		}
+
+		.skills ul {
+			border: @border-skills;
+			border-radius: .2rem;
+
+			li {
+				padding: .7rem;
+				border-bottom: @border-skills;
+
+				&:nth-last-of-type(1) {
+					border-bottom: unset;
+				}
+			}
+		}
+
+		@media (max-width: @mobileBreakpoint) {
+			flex-direction: column;
+		}
+
 	}
 
 }

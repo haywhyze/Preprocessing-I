@@ -141,10 +141,18 @@ h1 {
   font-size: 2.5rem;
   margin: 2rem 0 1rem 0;
 }
+h2 {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+h3 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
 :root {
   font-size: 100%;
 }
-@media (max-width: 550px) {
+@media (max-width: 500px) {
   :root {
     font-size: 120%;
   }
@@ -221,7 +229,7 @@ h1 {
     margin: 0.5rem;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 500px) {
   .container .hero-image img {
     width: 80%;
   }
@@ -248,8 +256,46 @@ h1 {
     padding: 3rem 1rem;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 500px) {
   .container .hero {
     padding: 2rem 0.7rem;
+  }
+}
+.container .main-content {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  background: #EDF3F7;
+}
+.container .main-content .intro,
+.container .main-content .skills {
+  flex-basis: 47%;
+}
+@media (max-width: 500px) {
+  .container .main-content .intro,
+  .container .main-content .skills {
+    flex-basis: 80%;
+    width: 80%;
+  }
+}
+.container .main-content .intro p {
+  line-height: 1.25;
+}
+.container .main-content .skills ul {
+  border: 1px solid #e4e5ee;
+  border-radius: .2rem;
+}
+.container .main-content .skills ul li {
+  padding: .7rem;
+  border-bottom: 1px solid #e4e5ee;
+}
+.container .main-content .skills ul li:nth-last-of-type(1) {
+  border-bottom: unset;
+}
+@media (max-width: 500px) {
+  .container .main-content {
+    flex-direction: column;
   }
 }
