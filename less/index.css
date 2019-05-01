@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Oswald');
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -137,17 +138,23 @@ body {
 img {
   width: 100%;
 }
+body {
+  font-family: 'Montserrat', sans-serif;
+}
 h1 {
   font-size: 2.5rem;
   margin: 2rem 0 1rem 0;
+  font-family: 'Oswald', sans-serif;
 }
 h2 {
   font-size: 2rem;
   margin: 1rem 0;
+  font-family: 'Oswald', sans-serif;
 }
 h3 {
   font-size: 1.5rem;
   margin: 1rem 0;
+  font-family: 'Oswald', sans-serif;
 }
 :root {
   font-size: 100%;
@@ -165,7 +172,7 @@ h3 {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-color: #2F0147;
+  background-color: #003174;
   color: #EDF2F4;
 }
 .container header .navbar ul {
@@ -247,7 +254,7 @@ h3 {
 .container .hero-button {
   padding: 1rem 2rem;
   font-size: 1.5rem;
-  background-color: #2F0147;
+  background-color: #003174;
   color: #EDF2F4;
   border-radius: .5rem;
 }
@@ -308,7 +315,7 @@ h3 {
   text-align: left;
 }
 .container .main-content .experience th {
-  background-color: #2F0147;
+  background-color: #003174;
   color: #EDF2F4;
 }
 .container .main-content .experience td,
@@ -318,4 +325,10 @@ h3 {
 }
 .container .main-content .experience tr:nth-child(even) {
   background-color: #BCE7FD;
+}
+.container footer {
+  background-color: #003174;
+  color: #EDF2F4;
+  text-align: center;
+  padding: 1.5rem;
 }

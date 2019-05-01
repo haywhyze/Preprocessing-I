@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v13/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(https://fonts.gstatic.com/s/oswald/v17/TK3iWkUHHAIjg752GT8D.ttf) format('truetype');
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -137,17 +149,23 @@ body {
 img {
   width: 100%;
 }
+body {
+  font-family: 'Montserrat', sans-serif;
+}
 h1 {
   font-size: 2.5rem;
   margin: 2rem 0 1rem 0;
+  font-family: 'Oswald', sans-serif;
 }
 h2 {
   font-size: 2rem;
   margin: 1rem 0;
+  font-family: 'Oswald', sans-serif;
 }
 h3 {
   font-size: 1.5rem;
   margin: 1rem 0;
+  font-family: 'Oswald', sans-serif;
 }
 :root {
   font-size: 100%;
@@ -318,4 +336,10 @@ h3 {
 }
 .container .main-content .experience tr:nth-child(even) {
   background-color: #BCE7FD;
+}
+.container footer {
+  background-color: #003174;
+  color: #EDF2F4;
+  text-align: center;
+  padding: 1.5rem;
 }

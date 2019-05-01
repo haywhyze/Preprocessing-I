@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Oswald');
 @import "./reset.less";
 @import "./variables.less";
 @import "./mixins.less";
@@ -6,19 +7,26 @@ img {
 	width: 100%;
 }
 
+body {
+	.montserrat();
+}
+
 h1 {
 	font-size: @xxLargeFontSize;
 	margin: 2rem 0 1rem 0;
+	.oswald();
 }
 
 h2 {
 	font-size: @xLargeFontSize;
 	margin: 1rem 0;
+	.oswald();
 }
 
 h3 {
 	font-size: @largeFontSize;
 	margin: 1rem 0;
+	.oswald();
 }
 
 :root {
@@ -193,5 +201,10 @@ h3 {
 		}
 
 	}
-
+	footer {
+		background-color: @primaryColor;
+		color: @white;
+		text-align: center;
+		padding: 1.5rem;
+	}
 }
