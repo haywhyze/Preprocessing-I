@@ -168,6 +168,30 @@ h3 {
 			flex-direction: column;
 		}
 
+		.experience {
+			width: 100%;
+			border-collapse: collapse;
+
+			table {
+				width: 100%;
+				text-align: left
+			}
+
+			th {
+				background-color: @primaryColor;
+				color: @white;
+			}
+
+			td, th {
+				border: @border-skills;
+				padding: .5rem;
+			}
+
+			tr:nth-child(even) {
+				background-color: @secondaryColor;
+			}
+		}
+
 	}
 
 }

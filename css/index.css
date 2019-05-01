@@ -165,7 +165,7 @@ h3 {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-color: #2F0147;
+  background-color: #003174;
   color: #EDF2F4;
 }
 .container header .navbar ul {
@@ -247,7 +247,7 @@ h3 {
 .container .hero-button {
   padding: 1rem 2rem;
   font-size: 1.5rem;
-  background-color: #2F0147;
+  background-color: #003174;
   color: #EDF2F4;
   border-radius: 0.5rem;
 }
@@ -298,4 +298,24 @@ h3 {
   .container .main-content {
     flex-direction: column;
   }
+}
+.container .main-content .experience {
+  width: 100%;
+  border-collapse: collapse;
+}
+.container .main-content .experience table {
+  width: 100%;
+  text-align: left;
+}
+.container .main-content .experience th {
+  background-color: #003174;
+  color: #EDF2F4;
+}
+.container .main-content .experience td,
+.container .main-content .experience th {
+  border: 1px solid #e4e5ee;
+  padding: 0.5rem;
+}
+.container .main-content .experience tr:nth-child(even) {
+  background-color: #BCE7FD;
 }
