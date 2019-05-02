@@ -1,15 +1,4 @@
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v13/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Oswald Regular'), local('Oswald-Regular'), url(https://fonts.gstatic.com/s/oswald/v17/TK3iWkUHHAIjg752GT8D.ttf) format('truetype');
-}
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Oswald');
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -205,7 +194,7 @@ h3 {
 }
 @media (max-width: 750px) {
   .container header .navbar ul li {
-    padding: 0 0.5rem;
+    padding: 0 .5rem;
   }
 }
 @media (max-width: 750px) {
@@ -237,7 +226,7 @@ h3 {
 }
 .container .hero-image img {
   width: 40%;
-  border-radius: 0.5rem;
+  border-radius: .5rem;
   box-shadow: 0 10px 6px -6px #2B2D42;
   margin: 1rem;
 }
@@ -267,7 +256,7 @@ h3 {
   font-size: 1.5rem;
   background-color: #003174;
   color: #EDF2F4;
-  border-radius: 0.5rem;
+  border-radius: .5rem;
 }
 @media (max-width: 750px) {
   .container .hero {
@@ -303,10 +292,10 @@ h3 {
 }
 .container .main-content .skills ul {
   border: 1px solid #e4e5ee;
-  border-radius: 0.2rem;
+  border-radius: .2rem;
 }
 .container .main-content .skills ul li {
-  padding: 0.7rem;
+  padding: .7rem;
   border-bottom: 1px solid #e4e5ee;
 }
 .container .main-content .skills ul li:nth-last-of-type(1) {
@@ -332,7 +321,7 @@ h3 {
 .container .main-content .experience td,
 .container .main-content .experience th {
   border: 1px solid #e4e5ee;
-  padding: 0.5rem;
+  padding: .5rem;
 }
 .container .main-content .experience tr:nth-child(even) {
   background-color: #BCE7FD;
